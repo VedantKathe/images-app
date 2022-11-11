@@ -1,0 +1,41 @@
+html {
+    width: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.search {
+    background-color: white;
+    min-width: 24rem;
+    position: relative;
+}
+
+.search-mobile {
+    display: block !important;
+}
+
+.search-desktop {
+    display: none !important;
+}
+
+
+@media (min-width: 768px) {
+
+    /* To make images take up equal height in a row */
+    .preview-image {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .search-mobile {
+        display: none !important;
+    }
+
+    .search-desktop {
+        display: block !important;
+    }
+}
